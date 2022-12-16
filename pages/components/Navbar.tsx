@@ -7,9 +7,9 @@ import Insta from "../../images/thumbs/instapink.png";
 import Youtube from "../../images/thumbs/ytpink.png";
 
 const main_nav =
-  "lg-inline-flex lg:w-auto w-full px-3 py-2 text-lg rounded font-bold items-center justify-center hover:text-rose-400";
+  "lg-inline-flex lg:w-auto w-full px-3 py-2 text-2xl rounded font-bold items-center justify-center hover:text-rose-400";
 const back_nav =
-  "lg-inline-flex lg:w-auto w-full px-3 py-2 text-lg rounded font-bold items-center justify-center lg:text-rose-400 hover:text-rose-500 mr-1 text-left";
+  "lg-inline-flex lg:w-auto w-full px-3 py-2 text-2xl rounded font-bold items-center justify-center lg:text-rose-400 hover:text-rose-500 mr-1 text-left";
 const icon_nav =
   "lg-inline-flex lg:w-auto w-full px-3 py-2 items-center justify-center mr-1";
 
@@ -52,7 +52,7 @@ export default function Navbar() {
             active ? "" : "hidden"
           } w-full lg:inline-flex lg:w-auto lg:flex-grow`}
         >
-          <div className="flex w-full flex-col items-start lg:ml-auto lg:inline-flex lg:h-auto  lg:w-auto lg:flex-row lg:items-center">
+          <div className="arcade flex w-full flex-col items-start lg:ml-auto lg:inline-flex lg:h-auto  lg:w-auto lg:flex-row lg:items-center">
             <Link href="/tools/sketcher">
               <div className={main_nav}>Tools</div>
             </Link>
