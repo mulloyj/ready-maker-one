@@ -21,8 +21,8 @@ export default function Navbar() {
   return (
     <>
       <nav className="flex flex-wrap items-center bg-black px-3">
-        <div className="mr-auto flex flex-1 justify-center"></div>
-        <div className="mx-12 w-1/3 flex-1">
+        <div className="lg:mr-auto lg:flex lg:flex-1 lg:justify-center"></div>
+        <div className="w-1/3 lg:mx-12 lg:flex-1">
           <Link href="/">
             <Image src={Logo} alt="Ready Maker One" />
           </Link>
@@ -49,7 +49,7 @@ export default function Navbar() {
         <div
           className={`${
             active ? "" : "hidden"
-          } w-full flex-1 lg:inline-flex lg:w-auto lg:flex-grow`}
+          } w-full lg:inline-flex lg:w-auto lg:flex-1 lg:flex-grow`}
         >
           <div className="arcade flex w-full flex-col items-start lg:ml-auto lg:inline-flex lg:h-auto  lg:w-auto lg:flex-row lg:items-center">
             <Link href="/tools/sketcher">
