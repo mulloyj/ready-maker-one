@@ -61,6 +61,7 @@ export default function Navbar() {
               className={icon_nav}
               href="https://www.instagram.com/ready.maker.one/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Image src={Insta}></Image>
             </a>
@@ -68,6 +69,7 @@ export default function Navbar() {
               className={icon_nav}
               href="https://www.youtube.com/c/readymakerone"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Image src={Youtube}></Image>
             </a>
