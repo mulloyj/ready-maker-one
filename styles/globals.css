@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'ArcadeClassic';
+    src: font-url('/public/fonts/ARCADECLASSIC.ttf') format('truetype');
+}
+
+.arcade {
+    font-family: ArcadeClassic;
+}
+
+@layer base {
+    @font-face {
+        font-family: 'ArcadeClassic';
+        src: font-url('/public/fonts/ARCADECLASSIC.ttf') format('truetype');
+    }
+}

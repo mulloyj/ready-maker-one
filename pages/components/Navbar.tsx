@@ -22,18 +22,18 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex items-center flex-wrap bg-black px-3">
-        <Link href="/">
-          <a className="w-1/3">
-            <Image src={Logo} />
-          </a>
-        </Link>
+      <nav className="flex flex-wrap items-center bg-black px-3">
+        <div className="w-1/3">
+          <Link href="/">
+            <Image src={Logo} alt="Ready Maker One" />
+          </Link>
+        </div>
         <button
-          className="inline-flex p-3 hover:bg-lime-800 rounded lg:hidden text-white ml-auto hover:text-white outline-none"
+          className="ml-auto inline-flex rounded p-3 text-white outline-none hover:text-white lg:hidden"
           onClick={handleClick}
         >
           <svg
-            className="w-6 h-6"
+            className="h-6 w-6"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -50,11 +50,11 @@ export default function Navbar() {
         <div
           className={`${
             active ? "" : "hidden"
-          } w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+          } w-full lg:inline-flex lg:w-auto lg:flex-grow`}
         >
-          <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
+          <div className="flex w-full flex-col items-start lg:ml-auto lg:inline-flex lg:h-auto  lg:w-auto lg:flex-row lg:items-center">
             <Link href="/tools/sketcher">
-              <a className={main_nav}>Guitar Sketcher</a>
+              <div className={main_nav}>Tools</div>
             </Link>
 
             <a
@@ -63,7 +63,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src={Insta}></Image>
+              <Image src={Insta} alt="Instagram"></Image>
             </a>
             <a
               className={icon_nav}
@@ -71,12 +71,12 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src={Youtube}></Image>
+              <Image src={Youtube} alt="Youtube"></Image>
             </a>
           </div>
         </div>
       </nav>
-      <div className="bg-slate-900 h-1 w-full"></div>
+      <div className="h-1 w-full bg-slate-900"></div>
     </>
   );
 }

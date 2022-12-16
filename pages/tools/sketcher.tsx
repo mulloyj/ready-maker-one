@@ -1,5 +1,5 @@
 function Sketcher() {
-  return <div>Guitar Sketcher</div>;
+  return <div></div>;
 }
 
 export default Sketcher;

@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <div className="min-h-screen bg-black text-white">
         <Navbar />
-        <div className="grow">
+        <div className="arcade grow">
           <Component {...pageProps} />
         </div>
         <div className="sticky top-[100vh]">

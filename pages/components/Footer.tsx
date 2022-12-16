@@ -5,23 +5,22 @@ import M from "../../images/bigmwhite250.png";
 
 export default function Footer() {
   return (
-    <footer className="p-4 bg-black shadow md:flex md:items-center md:justify-between dark:bg-gray-800 align-bottom hidden">
-      <div className="grid grid-cols-12 w-full mx-auto">
-        <div className="col-span-5"></div>
-        <div className="col-span-2">
-          <div className="w-24 justify-center items-center mx-auto">
-            <Image src={M}></Image>
-          </div>
-        </div>
-        <div className="col-span-3"></div>
-        <div className="col-span-2 justify-center items-center mx-auto">
+    <footer className="bg-black hidden p-4 align-bottom shadow md:flex md:items-center md:justify-between">
+      <div className="mx-auto grid w-full grid-cols-12">
+        <div className="col-span-5 items-center justify-center text-pink">
           <Link href="mailto:curtis@readymakerone.com">
             <div>
-              <a className="text-2xl pl-2">Contact: </a>
-              <a className="text-2xl">Curtis@ReadyMakerOne.com</a>
+              <div className="arcade pl-2 text-4xl">Contact: </div>
+              <div className="text-2xl">Curtis@ReadyMakerOne.com</div>
             </div>
           </Link>
         </div>
+        <div className="col-span-2">
+          <div className="mx-auto w-24 items-center justify-center">
+            <Image src={M} alt=""></Image>
+          </div>
+        </div>
+        <div className="col-span-5"></div>
       </div>
     </footer>
   );
