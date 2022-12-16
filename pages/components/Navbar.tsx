@@ -7,9 +7,7 @@ import Insta from "../../images/thumbs/instapink.png";
 import Youtube from "../../images/thumbs/ytpink.png";
 
 const main_nav =
-  "lg-inline-flex lg:w-auto w-full px-3 py-2 text-2xl rounded font-bold items-center justify-center hover:text-rose-400";
-const back_nav =
-  "lg-inline-flex lg:w-auto w-full px-3 py-2 text-2xl rounded font-bold items-center justify-center lg:text-rose-400 hover:text-rose-500 mr-1 text-left";
+  "lg-inline-flex lg:w-auto w-full px-3 py-2 text-2xl rounded font-bold items-center justify-center hover:text-pink";
 const icon_nav =
   "lg-inline-flex lg:w-auto w-full px-3 py-2 items-center justify-center mr-1";
 
@@ -23,13 +21,14 @@ export default function Navbar() {
   return (
     <>
       <nav className="flex flex-wrap items-center bg-black px-3">
-        <div className="w-1/3">
+        <div className="mr-auto flex flex-1 justify-center"></div>
+        <div className="mx-12 w-1/3 flex-1">
           <Link href="/">
             <Image src={Logo} alt="Ready Maker One" />
           </Link>
         </div>
         <button
-          className="ml-auto inline-flex rounded p-3 text-white outline-none hover:text-white lg:hidden"
+          className="inline-flex rounded p-3 text-white outline-none hover:text-white lg:hidden"
           onClick={handleClick}
         >
           <svg
@@ -50,7 +49,7 @@ export default function Navbar() {
         <div
           className={`${
             active ? "" : "hidden"
-          } w-full lg:inline-flex lg:w-auto lg:flex-grow`}
+          } w-full flex-1 lg:inline-flex lg:w-auto lg:flex-grow`}
         >
           <div className="arcade flex w-full flex-col items-start lg:ml-auto lg:inline-flex lg:h-auto  lg:w-auto lg:flex-row lg:items-center">
             <Link href="/tools/sketcher">
@@ -76,7 +75,9 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <div className="h-1 w-full bg-slate-900"></div>
+      <div
+        className={`${active ? "hidden" : ""} h-1 w-full bg-slate-900`}
+      ></div>
     </>
   );
 }
