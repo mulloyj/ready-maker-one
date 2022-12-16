@@ -56,16 +56,21 @@ export default function Navbar() {
             <Link href="/tools/sketcher">
               <a className={main_nav}>Guitar Sketcher</a>
             </Link>
-            <Link href="https://www.instagram.com/ready.maker.one/">
-              <a className={icon_nav}>
-                <Image src={Insta}></Image>
-              </a>
-            </Link>
-            <Link href="https://www.youtube.com/c/readymakerone">
-              <a className={icon_nav}>
-                <Image src={Youtube}></Image>
-              </a>
-            </Link>
+
+            <a
+              className={icon_nav}
+              href="https://www.instagram.com/ready.maker.one/"
+              target="_blank"
+            >
+              <Image src={Insta}></Image>
+            </a>
+            <a
+              className={icon_nav}
+              href="https://www.youtube.com/c/readymakerone"
+              target="_blank"
+            >
+              <Image src={Youtube}></Image>
+            </a>
           </div>
         </div>
       </nav>
